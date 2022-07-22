@@ -47,7 +47,7 @@ namespace VeriErisimKatmani.Concrete.EntityFramework.Base
             return result;
         }
 
-        public async Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter)
+        public async Task<List<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter= null)
         {
             List<TEntity> result;
             using (TContext context = new TContext())

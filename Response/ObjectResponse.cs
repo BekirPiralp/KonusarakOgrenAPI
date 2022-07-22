@@ -8,9 +8,23 @@
         public String Message { get; }
         private ObjectResponse(bool success, DataType data, string message)
         {
-            Success = success;
-            Data = data;
-            Message = message;
+            if(data == null)
+            {
+                Success = false;
+                Data = null;
+                Message = "Nesne gelmedi";
+            }else if (data is ICollection<object> list && list.Count<=0)
+            {
+                Success = false;
+                Data = null;
+                Message = "Nesneler gelmedi";
+            }
+            else
+            {
+                Success = success;
+                Data = data;
+                Message = message;
+            }
         }
 
         public ObjectResponse(string message):this(false,null,message)
