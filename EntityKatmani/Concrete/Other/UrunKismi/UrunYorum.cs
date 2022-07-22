@@ -1,8 +1,9 @@
 ﻿using EntityKatmani.Concrete.Base;
-using EntityKatmani.Concrete.Other.UserKismi;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EntityKatmani.Concrete.Other.UrunKismi
 {
+    [Table("UrunYorumlar")]
     public class UrunYorum : Entity
     {
         public Urun Urun { get; set; }

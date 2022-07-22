@@ -1,8 +1,10 @@
 ﻿using EntityKatmani.Concrete.Base;
 using EntityKatmani.Concrete.Other.UrunKismi;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EntityKatmani.Concrete.Other.SiparisKismi
 {
+    [Table("SiparisDetaylar")]
     public class SiparisDetay :Entity
     {
         /**

@@ -1,7 +1,9 @@
 ﻿using EntityKatmani.Concrete.Base;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EntityKatmani.Concrete.Other.FirmaKismi
 {
+    [Table("Markalar")]
     public class Marka :Entity
     {
         public string Name { get; set; }

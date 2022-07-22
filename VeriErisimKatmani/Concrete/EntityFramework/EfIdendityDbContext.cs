@@ -16,10 +16,6 @@ namespace VeriErisimKatmani.Concrete.EntityFramework
         public EfIdendityDbContext(DbContextOptions<EfIdendityDbContext> options) : 
             base(options)
         {
-
         }
-
-        DbSet<Rol> Roller { get; set;}
-        DbSet<User> Users { get; set;}
     }
 }

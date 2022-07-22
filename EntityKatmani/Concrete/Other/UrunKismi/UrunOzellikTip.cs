@@ -1,7 +1,9 @@
 ﻿using EntityKatmani.Concrete.Base;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EntityKatmani.Concrete.Other.UrunKismi
 {
+    [Table("UrunOzellikTipler")]
     public class UrunOzellikTip :Entity
     {
         /**
