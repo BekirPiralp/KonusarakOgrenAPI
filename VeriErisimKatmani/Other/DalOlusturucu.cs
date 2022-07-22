@@ -16,26 +16,26 @@ namespace VeriErisimKatmani.Other
     public class DalOlusturucu
     {
         #region Firma Kısmı
-        IDalMarka Marka { get; }
+        public IDalMarka Marka { get; }
         #endregion
         #region Kategori Kısmı
-        IDalKategori Kategori { get; }
+        public IDalKategori Kategori { get; }
         #endregion
         #region Rol Kısmı
-        IDalRol Rol { get; }
+        public IDalRol Rol { get; }
         #endregion
         #region Sipariş Kısmı
-        IDalSiparis Siparis { get; }
-        IDalSiparisDetay SiparisDetay { get; }
+        public IDalSiparis Siparis { get; }
+        public IDalSiparisDetay SiparisDetay { get; }
         #endregion
         #region Ürün Kısmı
-        IDalUrun Urun { get; }
-        IDalUrunOzellik UrunOzellik { get; }
-        IDalUrunOzellikTip UrunOzellikTip { get; }
-        IDalUrunYorum UrunYorum { get; }
+        public IDalUrun Urun { get; }
+        public IDalUrunOzellik UrunOzellik { get; }
+        public IDalUrunOzellikTip UrunOzellikTip { get; }
+        public IDalUrunYorum UrunYorum { get; }
         #endregion
         #region User Kısmı
-        IDalUser User { get; }
+        public IDalUser User { get; }
         #endregion
 
         private DalOlusturucu()

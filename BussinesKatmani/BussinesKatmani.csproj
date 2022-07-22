@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\Other\" />
-    <Folder Include="Other\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\EntityKatmani\EntityKatmani.csproj" />
     <ProjectReference Include="..\Response\Response.csproj" />
     <ProjectReference Include="..\VeriErisimKatmani\VeriErisimKatmani.csproj" />
