@@ -1,16 +1,16 @@
 using EntityKatmani.Concrete.Other.UserKismi;
-using KonusarakOgrenWeb.Data;
-using Microsoft.AspNetCore.Identity;
+using KonusarakOgrenWeb.Extensions;
+//using KonusarakOgrenWeb.Data;
+//using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using VeriErisimKatmani.Concrete.EntityFramework;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<EfIdendityDbContext>(options =>
-    options.UseSqlServer(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Configuration.CreateConnetionStrings();
+builder.Services.AddContexts();
+//builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<EfIdendityDbContext>();
@@ -21,7 +21,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseMigrationsEndPoint();
+    //app.UseMigrationsEndPoint();
 }
 else
 {
