@@ -1,24 +1,25 @@
 ﻿
 using EntityKatmani.Concrete.Other.RolKismi;
 using EntityKatmani.Concrete.Other.UserKismi;
-using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace VeriErisimKatmani.Concrete.EntityFramework
 {
-    public class EfIdendityDbContext : IdentityDbContext
+    public class EfIdendityDbContext : IdentityDbContext<User,Rol,int>
     {
         public EfIdendityDbContext():base()
         {
 
         }
 
-        #region Rol kısmı
-        public DbSet<Rol> Roller { get; set; }
-        #endregion
+        public EfIdendityDbContext(DbContextOptions<EfIdendityDbContext> options) : 
+            base(options)
+        {
 
-        #region User kısmı
-        public DbSet<User> Markalar { get; set; }
-        #endregion
+        }
+
+        DbSet<Rol> Roller { get; set;}
+        DbSet<User> Users { get; set;}
     }
 }

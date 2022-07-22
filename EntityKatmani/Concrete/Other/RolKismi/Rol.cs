@@ -1,15 +1,9 @@
 ﻿using EntityKatmani.Abstract;
-using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNetCore.Identity;
 
 namespace EntityKatmani.Concrete.Other.RolKismi
 {
-    public class Rol:IdentityRole
+    public class Rol : IdentityRole<int>,IEntity
     {
-        public Rol(): base()
-        {
-        }
-        public Rol(string rolName) : base(rolName)
-        {
-        }
     }
 }

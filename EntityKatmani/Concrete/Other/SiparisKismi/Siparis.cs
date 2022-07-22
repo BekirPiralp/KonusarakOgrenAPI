@@ -9,6 +9,6 @@ namespace EntityKatmani.Concrete.Other.SiparisKismi
         public Urun Urun { get; set; }
         public int Adet { get; set; }
         public double Tutar { get; set; }
-        public User Musteri { get; set; }
+        public string Musteri { get; set; }
     }
 }
