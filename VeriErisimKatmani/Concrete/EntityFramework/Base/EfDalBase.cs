@@ -13,7 +13,7 @@ namespace VeriErisimKatmani.Concrete.EntityFramework.Base
         public async Task<TEntity> AddAsync(TEntity entity)
         {
             TEntity result = null;
-            if (entity.isNotNull())
+            if (entity.isEmpity())
             {
                 using (TContext context = new TContext())
                 {
@@ -62,7 +62,7 @@ namespace VeriErisimKatmani.Concrete.EntityFramework.Base
         public async Task<TEntity> UpdateAsync(TEntity entity)
         {
             TEntity result = null;
-            if(entity.isNotNull() && entity.isNotEmpity())
+            if(entity.isNotEmpity())
             {
                 using(TContext context = new TContext())
                 {
