@@ -1,4 +1,4 @@
-﻿using KonusarakOgrenWeb.Data;
+﻿using Library;
 
 namespace KonusarakOgrenWeb.Extensions
 {

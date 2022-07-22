@@ -1,4 +1,4 @@
-﻿using KonusarakOgrenWeb.Data;
+﻿using Library;
 using Microsoft.EntityFrameworkCore;
 using VeriErisimKatmani.Concrete.EntityFramework;
 

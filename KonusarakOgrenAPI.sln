@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Response", "Response\Respon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VeriErisimKatmani", "VeriErisimKatmani\VeriErisimKatmani.csproj", "{29683F8A-C18C-4CFF-8ED2-AF5B4D3AFD4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinesKatmani", "BussinesKatmani\BussinesKatmani.csproj", "{9A3ED9CB-FD1D-417C-9322-37AF71CAB70A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BussinesKatmani", "BussinesKatmani\BussinesKatmani.csproj", "{9A3ED9CB-FD1D-417C-9322-37AF71CAB70A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonusarakOgrenWeb", "KonusarakOgrenWeb\KonusarakOgrenWeb.csproj", "{7CEACE25-80F3-4539-9274-19A7AB6D6103}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KonusarakOgrenWeb", "KonusarakOgrenWeb\KonusarakOgrenWeb.csproj", "{7CEACE25-80F3-4539-9274-19A7AB6D6103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{6B6ABDB7-8520-4F51-A51B-363A65DB3F13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7CEACE25-80F3-4539-9274-19A7AB6D6103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CEACE25-80F3-4539-9274-19A7AB6D6103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CEACE25-80F3-4539-9274-19A7AB6D6103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6ABDB7-8520-4F51-A51B-363A65DB3F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6ABDB7-8520-4F51-A51B-363A65DB3F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6ABDB7-8520-4F51-A51B-363A65DB3F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6ABDB7-8520-4F51-A51B-363A65DB3F13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

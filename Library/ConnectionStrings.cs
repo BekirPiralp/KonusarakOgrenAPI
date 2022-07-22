@@ -1,4 +1,4 @@
-﻿namespace KonusarakOgrenWeb.Data
+﻿namespace Library
 {
     public class ConnectionStrings
     {

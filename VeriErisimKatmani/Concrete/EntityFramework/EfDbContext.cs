@@ -2,6 +2,7 @@
 using EntityKatmani.Concrete.Other.KategoriKismi;
 using EntityKatmani.Concrete.Other.SiparisKismi;
 using EntityKatmani.Concrete.Other.UrunKismi;
+using Library;
 using Microsoft.EntityFrameworkCore;
 
 namespace VeriErisimKatmani.Concrete.EntityFramework
@@ -11,6 +12,17 @@ namespace VeriErisimKatmani.Concrete.EntityFramework
         public EfDbContext():base()
         {
 
+        }
+
+        public EfDbContext(DbContextOptions options):base (options)
+        {
+
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(connectionString: ConnectionStrings.get.DataConnection, opt => opt.EnableRetryOnFailure(maxRetryCount: 10));
+            base.OnConfiguring(optionsBuilder);
         }
 
         #region Firma kısmı
